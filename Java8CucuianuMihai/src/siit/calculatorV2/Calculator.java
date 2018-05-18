@@ -70,12 +70,12 @@ public class Calculator {
 //    The CPU also sends comads through the mother board to the display in order to print out the data found in the display buffer memory
     
     public void myComputation() {
-        
+//    
         Boolean quit = false;
         Scanner scan = new Scanner(System.in);
         
         while (!quit) {
-            
+//    
         System.out.println("Type in your first operator");
         myFirstInput.setMyData(myProcessor.dataTransfer(myNumPad.comandsInput()));
         myProcessor.isDouble(myFirstInput.getMyData());
@@ -96,7 +96,7 @@ public class Calculator {
         }
         
                 System.out.println("Do you want to hit the clear button and do another calculation? (y/n)");
-                String h = scan.nextLine();
+                String h =  scan.nextLine();
                 if ("y".equals(h)) {
                     Boolean press = myClearButton.clearComand();
                     while (press) {
